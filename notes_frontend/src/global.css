@@ -1,17 +1,4 @@
-/**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles for the ultralight Qwik template.
- * Uses a minimalistic light theme with specified color scheme.
- */
-
-:root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --accent-color: #0078d4;
-  --background-color: #ffffff;
-}
-
+/* Base reset and typography */
 html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -28,14 +15,13 @@ html {
     sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: var(--primary-color);
-  line-height: inherit;
-}
-
-* {
-  box-sizing: border-box;
 }
